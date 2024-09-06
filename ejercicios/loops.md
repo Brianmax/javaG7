@@ -12,11 +12,52 @@ Imprimir los numeros pares del 1 al 100.
 
 # Ejercicio 4
 
-Imprimir los numeros impares del 1 al 100.
+Tres hermanos acuerdan reunirse en un lugar específico. Cada uno de ellos está representado por un número, siendo 1 el hermano mayor y 3 el hermano menor. El día de la reunión, uno de los hermanos se retrasa. Sabiendo los números de los dos hermanos que llegaron a tiempo, determina el número del hermano que llegó tarde.
+
+# Input
+```
+1 3
+```
+
+# Output
+```
+2
+```
 
 # Ejercicio 5
 
-Imprimir los numeros del 1 al 100, excepto los multiplos de 3.
+Dado un conjunto de números, imprime la suma alternada de los mismos. En otras palabras, imprime el resultado de sumar $(a_{1} - a_{2} + a_{3} - a_{4} + a_{5} - a_{6} + ...)$. Observa que los signos alternan entre positivo y negativo, comenzando con el signo positivo.
+
+La primera linea del input es la cantidad de test que tendras que realizar, este numero esta en el rango de $1 \leq t \leq 1000$.
+
+La primera linea de cada test contiene un numero entero entre $1 \leq n \leq 50$ que representa la cantidad de numeros que se van a sumar.
+
+La segunda linea de cada test contiene $n$ numeros enteros $a_{1}, a_{2}, a_{3}, ..., a_{n}$ , estos numeros estan en el rango de $1 \leq a_{i} \leq 100$.
+
+
+# Input
+```
+4
+4
+1 2 3 17
+1
+100
+2
+100 100
+5
+3 1 4 1 5
+
+```
+
+# Output
+```
+-15
+100
+0
+10
+
+```
+
 
 # Ejercicio 6
 
@@ -116,6 +157,58 @@ Tenemos 4 minutos y 4 libros por leer. Si empezamos a leer desde el primer libro
 # Ejercicio 17
 
 Dada una matriz de `n` x `m` elementos. Debes de encontrar el valor máximo de la matriz.
+
+# Ejercicio 18
+
+En la Universidad Nacional de Ingeniería, la red local entre los servidores no siempre funciona correctamente. Se descubrió que cuando se envían dos mensajes idénticos, estos se combinan, haciendo que ambos mensajes se conviertan en uno. En esta combinación, el final del primer mensaje coincide con el inicio del segundo, y esta superposición solo puede ocurrir si los caracteres son iguales.
+
+Por ejemplo, si enviamos el mensaje `abrakadabra` de manera consecutiva, es posible que el resultado sea `abrakadabrabrakadabra` o `abrakadabrakadabra`.
+
+Mientras se consulta a la empresa de soporte, debes proporcionar una solución temporal. Para ello, debes encontrar cuál podría ser el mensaje original. Dado el mensaje final, determina si este es el resultado de la mezcla de dos mensajes y, de ser así, identifica un posible mensaje original.
+
+Aquellas situaciones donde los dos mensajes se sobreponen completamente uno sobre el otro, no son considerados mensajes erroneos. De manera similar si los dos mensajes se concatenan sin que exista una mezcla, tampoco son considerados mensajes erroneos (por ejemplo `abcabc`).
+
+# Input
+```
+abrakadabrabrakadabra
+```
+
+# Output
+```
+YES
+abrakadabra
+```
+
+# Input
+```
+ababababa
+```
+
+# Output
+```
+YES
+ababa
+```
+
+# Input
+```
+abcabc
+```
+
+# Output
+```
+NO
+```
+
+# Input
+```
+tatbt
+```
+
+# Output
+```
+NO
+```
 
 # Ejercicio 18
 
