@@ -73,7 +73,7 @@ Escriba un programa que reciba un número `n` e imprima los números impares men
 ```
 
 # Ejercicio 4
-La operación factorial se define de la siguiente manera: $5!=5\times4\times3\times2\times1$. Cree una clase Factorial que tenga un método llamado `resolverFactorial` que reciba un valor `n`, donde `n` es el valor del factorial a calcular.
+La operación factorial se define de la siguiente manera: $5!=5\times4\times3\times2\times1$. Cree un programa que reciba un valor `n`, donde `n` es el valor del factorial a calcular.
 
 ### Input
 ```
