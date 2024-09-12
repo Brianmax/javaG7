@@ -57,7 +57,12 @@ $(10 + 0.5 \times (120 - 50))$
 ```
 $185.00
 ```
-$(10 + 0.5 \times (250 - 50) + 1.5 \times (250 - 200))$
+$10 + 0.5 \times (250 - 50) + 1.5 \times (250 - 200)$
+
+- $10$ Pago fijo
+- $0.5 \times (250 - 50)$ Consumo entre 51 y 200. Quitamos los primeros 50 litros.
+- $1.5 \times (250 - 200)$ Consumo mayor a 200 litros. Quitamos los primeros 200 litros.
+
 # Ejercicio 3
 Escriba un programa que reciba un número `n` e imprima los números impares menores a `n`.
 
