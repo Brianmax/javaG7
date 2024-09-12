@@ -57,10 +57,10 @@ $(10 + 0.5 \times (120 - 50))$
 ```
 $185.00
 ```
-$10 + 0.5 \times (250 - 50) + 1.5 \times (250 - 200)$
+$10 + 0.5 \times (200 - 50) + 1.5 \times (250 - 200)$
 
 - $10$ Pago fijo
-- $0.5 \times (250 - 50)$ Consumo entre 51 y 200. A este tramo se le aplica un costo de $0.5$ por cada litro consumido. Si se consumen más de 200 litros, significa que este tramo (del litro 51 al litro 200) está completamente cubierto. Por lo tanto, calculamos el costo de este tramo completo. $(250 - 50)$ es el rango de litros en el que se cobra $0.5 por litro (es decir, hay 150 litros entre el litro 51 y el litro 200).
+- $0.5 \times (200 - 50)$ Consumo entre 51 y 200. A este tramo se le aplica un costo de $0.5$ por cada litro consumido. Si se consumen más de 200 litros, significa que este tramo (del litro 51 al litro 200) está completamente cubierto. Por lo tanto, calculamos el costo de este tramo completo. $(200 - 50)$ es el rango de litros en el que se cobra $0.5 por litro (es decir, hay 150 litros entre el litro 51 y el litro 200).
 
 - $1.5*(250 - 200)$ Cualquier consumo adicional por encima de 200 litros se cobra a $1.5 por litro. $(250 - 200)$ son los litros consumidos por encima de 200.
 
