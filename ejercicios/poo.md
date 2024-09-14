@@ -92,7 +92,7 @@ Una empresa desea tener el control de planilla de sus empleados. La empresa cuen
   - Total de empleados registrados como Operario.
 
 
-# Ejercicio 4
+# Ejercicio 6
 
 ## Descripción
 
@@ -166,7 +166,7 @@ En la clase `Main`, se deberá:
 ---
 
 
-## Ejericicio 5
+## Ejericicio 7
 
 ## Descripción
 
@@ -237,7 +237,7 @@ En la clase `Main`, se deberá:
 - Escriba el código en el lenguaje de programación Java.
 
 
-# Ejercicio 6
+# Ejercicio 8
 
 ## Descripción
 
@@ -314,7 +314,7 @@ En la clase `Main`, se deberá:
 - Asegúrese de que todas las clases e interfaces tengan una estructura coherente y métodos bien definidos.
 - Escriba el código en Java.
 
-# Ejercicio 7
+# Ejercicio 9
 
 ## Descripción
 
@@ -392,7 +392,7 @@ En la clase `Main`, se deberá:
 
 Este ejercicio proporcionará una comprensión práctica de cómo se puede utilizar la herencia múltiple en Java mediante interfaces para crear un sistema de gestión flexible que abarque múltiples roles y funcionalidades.
 
-# Ejercicio 8
+# Ejercicio 10
 
 ## Descripción
 
@@ -462,7 +462,7 @@ En la clase `Main`, se deberá:
 - Asegúrese de que todas las clases tengan una estructura coherente y métodos bien definidos.
 - Escriba el código en el lenguaje Java.
 
-# Ejercicio 9
+# Ejercicio 11
 
 Este ejercicio implica la creación de un sistema de gestión de personal en una empresa utilizando Java. Se utilizará herencia y polimorfismo para manejar diferentes tipos de empleados y una clase para administrar una lista de estos empleados.
 
