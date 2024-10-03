@@ -1,0 +1,59 @@
+// $inc
+
+use('db1')
+db.universidades.updateMany(
+    {},
+    {
+        $inc: {
+            alumnado: 2000
+        }
+    }
+)
+
+use('db1')
+db.universidades.find()
+
+// a las universidades que sean de lima
+// y que tengan un presupuesto mayor o igual a 
+// 9M aumentar el alumnado en 4K
+
+use('db1')
+db.universidades.updateMany(
+    {
+        "direccion.region": "Lima",
+        presupuesto: {
+            $gte: 9000000
+        }
+    },
+    {
+        $inc: {
+            alumnado: 4000
+        }
+    }
+)
+
+use('db1')
+db.universidades.insertOne(
+    {
+        _id: 4,
+        nombre: 2,
+        carreras: [
+            "Ing Mecanica",
+            "Ing Mecatronica",
+            "Sociologia",
+            "Ing de Sistemas",
+            "Psicologia"
+        ],
+        alumnos: 5000,
+        direccion: {
+            calle: "Av Aviacion",
+            numero: 454,
+            distrito: "Trujillo",
+            region: 4
+        },
+        presupuesto: 5000000
+    }
+)
+
+use('db1')
+db.universidades.find();

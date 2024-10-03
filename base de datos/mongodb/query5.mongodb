@@ -1,0 +1,44 @@
+use('db1')
+db.createCollection('users', 
+    {
+        validator: {
+            $jsonSchema: {
+                bsonType: 'object',
+                properties: {
+                    nombre: {
+                        bsonType: 'string'
+                    },
+                    apellido: {
+                        bsonType: 'string'
+                    },
+                    username: {
+                        bsonType: 'string'
+                    }
+                    password: {
+                        bsonType: 'string'
+                    },
+                    productos:{
+                        bsonType: 'array',
+                        items: {
+                            bsonType: 'object',
+                            properties: {
+                                nombre: {
+                                    bsonType: 'string'
+                                },
+                                precio: {
+                                    bsonType: 'double'
+                                },
+                                stock: {
+                                    bsonType: 'int'
+                                },
+                                categoria: {
+                                    bsonType: 'string'
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+)
