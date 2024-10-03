@@ -13,7 +13,7 @@ db.createCollection('users',
                     },
                     username: {
                         bsonType: 'string'
-                    }
+                    },
                     password: {
                         bsonType: 'string'
                     },
@@ -36,9 +36,31 @@ db.createCollection('users',
                                 }
                             }
                         }
+                    },
+                    direcciones: {
+                        bsonType: 'array',
+                        items: {
+                            bsonType: 'object',
+                            properties: {
+                                calle: {
+                                    bsonType: 'string'
+                                },
+                                numero: {
+                                    bsonType: 'int'
+                                },
+                                piso: {
+                                    bsonType: 'int'
+                                },
+                                ciudad: {
+                                    bsonType: 'string'
+                                }
+                            }
+                        }
                     }
                 }
             }
         }
     }
 )
+
+
