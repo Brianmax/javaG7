@@ -1,0 +1,12 @@
+{
+    "nombre": "George",
+    "apellido": "Maxi",
+    "edad": 25,
+    "intereses": ["futbol", "videojuegos", "cine"],
+    "direccion": {
+        "calle": "calle Bolivar",
+        "numero": 309,
+        "ciudad": "Arequipa",
+        "pais": "Peru"
+    }
+}

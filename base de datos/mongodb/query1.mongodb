@@ -1,0 +1,55 @@
+
+use('db1')
+db.createCollection("usuarios")
+
+use('db1')
+db.usuarios.insertOne(
+    {
+        "nombre": "George",
+        "apellido": "Maxi",
+        "username": "gmaxi12",
+        "password": "1234"
+    }
+)
+
+use('db1')
+db.usuarios.insertOne(
+    {
+        "nombre": "Jose",
+        "apellido": "Fuentes",
+        "username": "jfuentes",
+        "password": "1298",
+        "edad": 45
+    }
+)
+
+
+use('db1')
+db.usuarios.find()
+
+use('db1')
+db.usuarios.insertMany(
+    [
+        {
+            "nombre": "Pedro",
+            "apellido": "Savedra",
+            "username": "psavedra",
+            "password": "1121",
+            "edad": 45
+        },
+        {
+            "nombre": "Fiorela",
+            "apellido": "Ramirez",
+            "username": "framirez",
+            "password": "1298",
+            "edad": 25
+        },
+        {
+            "nombre": "Diana",
+            "apellido": "Mejia",
+            "username": "dmejia",
+            "password": "1298",
+            "edad": 24
+        }
+    ]
+)

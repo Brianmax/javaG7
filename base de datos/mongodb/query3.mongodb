@@ -1,0 +1,180 @@
+// operadores
+// gt (greater than), lt (less than), gte, lte
+
+use('db1')
+// universidades con numero de alumnos mayor que 8000
+db.universidades.find(
+    // filtro
+    {
+        alumnos: {
+            $gt: 8000
+        }
+    }
+)
+
+// universidades con numero de alumnos menor a 5000
+
+// universidades con presupuesto menor a 9000000
+
+use('db1')
+db.universidades.find(
+    // filtro
+    {
+        "direccion.region": "Lima"
+    }
+)
+
+// $and, $or
+
+// alumnos >= 10k y presupuesto >= 10M
+// and de manera implicita
+use('db1')
+db.universidades.find(
+    // filtro
+    {
+        alumnos: {
+            $gte: 10000
+        }, // and 
+        presupuesto: {
+            $gte: 10000000
+        }
+        
+    },  
+    {
+        nombre: true,
+        alumnos: true,
+        presupuesto: true
+    }
+)
+
+// $and explicito
+use('db1')
+db.universidades.find(
+    {
+        $and: [
+            {
+                presupuesto: {
+                    $gte: 10000000
+                }
+            },
+            {
+                alumnos: {
+                    $gte: 10000
+                }
+            }
+        ]
+    },
+    {
+        nombre: true,
+        alumnos: true,
+        presupuesto: true
+    }
+)
+
+// universidades con alumnos mayor igual a 10k
+// o presupesto sea mayor que 7M
+use('db1')
+// traer los documentos donde el numerto de alumnmos sea menor que 10k
+// o el presupuesto supere o sea igual a los 7M
+// and
+// la universidad debe estar en la region lima
+
+db.universidades.find(
+    // filtro
+    {
+        $or: [
+            { 
+                alumnos: {
+                    $lt: 10000
+                }
+            },
+            { presupuesto: {$gte: 7000000}}
+        ],
+        "direccion.region": "Lima"
+    }
+)
+
+use('db1')
+db.universidades.find(
+    {
+        $and: [
+            { 
+                $or: [
+                    {
+                        presupesto: {
+                            $gte: 7000000
+                        }
+                    },
+                    {
+                        alumnos: {
+                            $lt: 10000
+                        }
+                    }
+                ]
+            },
+            {
+                "direccion.region": "Lima"
+            }
+        ]
+    }
+)
+
+use('db1')
+db.universidades.find(
+    {
+        $or: [
+            {
+                alumnos: {
+                    $lt: 10000
+                }
+            },
+            {
+                presupuesto: {
+                    $gte: 7000000
+                }
+            }
+        ], // and
+        $and: [
+            {
+                "direccion.region": "Lima"
+            }
+        ]
+    },
+    {
+        nombre: true,
+        alumnos: true,
+        presupuesto: true,
+        "direccion.region": true,
+        "direccion.distrito": true,
+        _id: false
+    }
+)
+
+// $set
+use('db1')
+db.universidades.updateMany(
+    // filtro
+    {
+        "direccion.region": "Lima"
+    },
+    // actualizacion
+    {
+        $set: {
+            alumnos: 10000
+        }
+    }
+)
+use('db1')
+db.universidades.find()
+
+use('db1')
+db.universidades.updateMany(
+    // filtro
+    {},
+    // actualizacion
+    {
+        $set: {
+            alumnos: 10000
+        }
+    }
+)

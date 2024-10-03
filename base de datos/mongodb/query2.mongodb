@@ -1,0 +1,133 @@
+use('db1')
+db.universidades.insertOne(
+    {
+        nombre: "UNI",
+        carreras: [
+            "Ing Mecanica",
+            "Ing Mecatronica",
+            "Ing Sanitaria",
+            "Ing Electrica"
+        ],
+        alumnos: 5000,
+        direccion: {
+            calle: "Av Leon Velarde",
+            numero: 203,
+            distrito: "San Miguel",
+            region: "Lima"
+        },
+        presupuesto: 5000000
+    }
+)
+
+use('db1')
+db.universidades.insertMany(
+    [
+        {
+            nombre: "PUCP",
+            carreras: [
+                "Ing Mecanica",
+                "Ing Mecatronica",
+                "Derecho",
+                "Psicologia"
+            ],
+            alumnos: 10000,
+            direccion: {
+                calle: "Av Universitaria",
+                numero: 304,
+                distrito: "San Isidro",
+                region: "Lima"
+            },
+            presupuesto: 10000000
+        },
+        {
+            nombre: "UPCH",
+            carreras: [
+                "Medicina",
+                "Enfermeria",
+                "Ing Biomedica",
+                "Farmacia"
+            ],
+            alumnos: 4000,
+            direccion: {
+                calle: "Av Lima",
+                numero: 230,
+                distrito: "Surco",
+                region: "Lima"
+            },
+            presupuesto: 12000000
+        },
+        {
+            nombre: "UNMSM",
+            carreras: [
+                "Ing Mecanica",
+                "Ing Mecatronica",
+                "Sociologia",
+                "Derecho",
+                "Psicologia"
+            ],
+            alumnos: 14000,
+            direccion: {
+                calle: "Av Peru",
+                numero: 123,
+                distrito: "Miraflores",
+                region: "Lima"
+            },
+            presupuesto: 5000000
+        },
+        {
+            nombre: "UNSA",
+            carreras: [
+                "Ing Mecanica",
+                "Ing Mecatronica",
+                "Ing Quimica",
+                "Derecho",
+                "Bellas Artes"
+            ],
+            alumnos: 8000,
+            direccion: {
+                calle: "Av Independencia",
+                numero: 156,
+                distrito: "Arequipa",
+                region: "Arequipa"
+            },
+            presupuesto: 7000000
+        },
+        {
+            nombre: "UNSAAC",
+            carreras: [
+                "Ing Mecanica",
+                "Ing Mecatronica",
+                "Sociologia",
+                "Ing de Sistemas",
+                "Psicologia"
+            ],
+            alumnos: 5000,
+            direccion: {
+                calle: "Av Cusco",
+                numero: 233,
+                distrito: "Cusco",
+                region: "Cusco"
+            },
+            presupuesto: 7000000
+        }
+    ]
+)
+
+
+use('db1')
+db.universidades.find().count()
+
+use('db1')
+db.universidades.find(
+    // filtro
+    {
+        nombre: "UNI"
+    },
+    // project
+    {
+        nombre: true,
+        alumnos: true,
+        _id: false
+    }
+)
+
