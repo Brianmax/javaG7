@@ -26,13 +26,13 @@ Tres hermanos acuerdan reunirse en un lugar específico. Cada uno de ellos está
 
 # Ejercicio 5
 
-Dado un conjunto de números, imprime la suma alternada de los mismos. En otras palabras, imprime el resultado de sumar $(a_{1} - a_{2} + a_{3} - a_{4} + a_{5} - a_{6} + ...)$. Observa que los signos alternan entre positivo y negativo, comenzando con el signo positivo.
+Dado un conjunto de números, imprime la suma alternada de los mismos. En otras palabras, imprime el resultado de sumar $(a_{0} - a_{1} + a_{2} - a_{3} + a_{4} - a_{5} + ...)$. Observa que los signos alternan entre positivo y negativo, comenzando con el signo positivo.
 
 La primera linea del input es la cantidad de test que tendras que realizar, este numero esta en el rango de $1 \leq t \leq 1000$.
 
 La primera linea de cada test contiene un numero entero entre $1 \leq n \leq 50$ que representa la cantidad de numeros que se van a sumar.
 
-La segunda linea de cada test contiene $n$ numeros enteros $a_{1}, a_{2}, a_{3}, ..., a_{n}$ , estos numeros estan en el rango de $1 \leq a_{i} \leq 100$.
+La segunda linea de cada test contiene $n$ numeros enteros $a_{0}, a_{1}, a_{2}, ..., a_{n}$ , estos numeros estan en el rango de $1 \leq a_{i} \leq 100$.
 
 
 # Input
